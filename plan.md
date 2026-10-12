@@ -29,7 +29,7 @@ wired up.
 One new file, `rag/retriever/reranker.py`, plus tests.
 
 `plan.md` (this file) and `comment.md` are also new files, both added to the
-root directory of this repo.
+root directory of this repo.  They do not affect logic or testing.
 
 Changes to `hybrid.py`, `review_generator.py`, the evaluator, fine-tuning, or 
 wiring the reranker into the running app will not be required.
@@ -110,8 +110,9 @@ numbers as extra information only.
 ### Evidence
 
 `make check` (ruff, black, mypy). The venv's console scripts had a stale
-shebang after the repo moved, so I ran the same Makefile targets with `VENV_BIN` pointed at
-wrappers that call `.venv/bin/python -m <tool>`. Nothing in the repo was changed.
+shebang after the repo moved, so I ran the same Makefile targets with `VENV_BIN` 
+pointed at wrappers that call `.venv/bin/python -m <tool>`. Nothing in the repo 
+was changed.
 
 ```
 $ make check
@@ -124,7 +125,8 @@ All done! ✨ 🍰 ✨
 Success: no issues found in 77 source files
 ```
 
-`make test-unit` (per-test lines for the other test files omitted; all `test_reranking.py` lines kept):
+`make test-unit` (per-test lines for the other test files omitted; all 
+`test_reranking.py` lines kept):
 
 ```
 $ make test-unit
@@ -406,8 +408,8 @@ index 0000000..3b318de
 
 ## AI Use Statement
 
-I'm using Claude Code to read the repo, check this plan against a rubric, and
-help with debugging. I review everything it produces before posting.
+I'm using Claude Code to read the repo, check this plan against a rubric, create and
+alter files, and help with debugging. I review everything it produces before posting.
 
 ## Deviations
 
