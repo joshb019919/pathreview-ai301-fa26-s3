@@ -179,8 +179,12 @@ exit: 0
 
 ## Diff
 
+Code diff only: the two code files, `rag/retriever/reranker.py` and
+`tests/unit/test_reranking.py`, as of commit `e056a7f`. `plan.md` and `comment.md`
+are added in a separate docs commit and are not shown here.
+
 ```diff
-$ git diff main...HEAD
+$ git diff main...e056a7f
 diff --git a/rag/retriever/reranker.py b/rag/retriever/reranker.py
 new file mode 100644
 index 0000000..e47e5c0
